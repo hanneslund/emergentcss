@@ -1,0 +1,28 @@
+# Try it out
+
+Currently the only way to try it out is with `Next.js` by pointing the `next` dependency to `hanneslund/emergentcss-next`. It has a custom build of `next-swc` with a plugin that uses the compiler.
+
+```json
+{
+  "name": "app",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "hanneslund/emergentcss-next",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
+```
+
+After that you're ready to style your app by using the `ecss` prop. The plugin will remove the prop and insert a `<style jsx>` tag with the compiler's output.
+
+```
+<nav ecss="center font-w=medium gap=4 text-c=neutral-200">
+```
+
+To see it in action, check out the source of this site: [emergentcss docs](https://github.com/hanneslund/emergentcss/tree/main/apps/docs).

@@ -1,0 +1,54 @@
+# Groups
+
+## Group assign
+
+Assign the same value to several utils.
+
+```
+(l r)=10 (t b)=0
+```
+
+## Util branching
+
+Utils that fire together, wire together.
+
+```
+border-(w=1 r=lg dashed)
+(p- m-)(x=10 y=20)
+```
+
+## Variant group
+
+Allow you to use the same variants on several utils.
+
+```
+@md:hover:((bg-c border-c)=black text-c=white)
+```
+
+## Variant and value matching
+
+Variant and value matching makes it easier to apply different variants on the same util.
+
+Before
+
+```
+@sm:p=1 @md:p=2 first:p=3 @sm:m=3 @md:m=2 first:m=1
+```
+
+After
+
+```
+(@sm @md first):(p=(1 2 3) m=(3 2 1))
+```
+
+A `_` can be used if you want no variant applied to a matched value.
+
+```
+(_ @md @lg):(p=(1 2 3) m=(3 2 1))
+```
+
+You can skip variants on a util by using `_` as the value, or skip the matching altogether by assigning a single value.
+
+```
+(@md @lg @xl):odd:(p=(5 _ 10) m=10)
+```

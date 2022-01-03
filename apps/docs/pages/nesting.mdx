@@ -1,0 +1,13 @@
+# Nesting
+
+You are able to nest variants and groups.
+
+```
+first:((p- m-)(x=10 @md:(x=20 focus:bg-c=white)))
+```
+
+Only the latest variants will be matched if you nest variant and value matching.
+
+```
+(_ @md):(p=(0 10) (_ @md @lg):(m=(0 10 20)))
+```

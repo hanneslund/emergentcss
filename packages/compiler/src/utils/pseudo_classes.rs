@@ -1,0 +1,46 @@
+use anyhow::{bail, Result};
+
+pub fn get_pseudo(name: &str) -> Result<String> {
+    Ok(match name {
+        "hover" => String::from(":hover"),
+        "focus" => String::from(":focus"),
+        "focus-within" => String::from(":focus-within"),
+        "focus-visible" => String::from(":focus-visible"),
+        "active" => String::from(":active"),
+        "visited" => String::from(":visited"),
+        "target" => String::from(":target"),
+        "first" => String::from(":first-child"),
+        "last" => String::from(":last-child"),
+        "only" => String::from(":only-child"),
+        "odd" => String::from(":nth-child(odd)"),
+        "even" => String::from(":nth-child(even)"),
+        "first-of-type" => String::from(":first-of-type"),
+        "last-of-type" => String::from(":last-of-type"),
+        "only-of-type" => String::from(":only-of-type"),
+        "empty" => String::from(":empty"),
+        "disabled" => String::from(":disabled"),
+        "checked" => String::from(":checked"),
+        "indeterminate" => String::from(":indeterminate"),
+        "default" => String::from(":default"),
+        "required" => String::from(":required"),
+        "valid" => String::from(":valid"),
+        "invalid" => String::from(":invalid"),
+        "in-range" => String::from(":in-range"),
+        "out-of-range" => String::from(":out-of-range"),
+        "placeholder-shown" => String::from(":placeholder-shown"),
+        "autofill" => String::from(":autofill"),
+        "read-only" => String::from(":read-only"),
+        "open" => String::from(":[open]"),
+        "before" => String::from("::before"),
+        "after" => String::from("::after"),
+        "first-letter" => String::from("::first-letter"),
+        "first-line" => String::from("::first-line"),
+        "marker" => String::from("::marker"),
+        "selection" => String::from("::selection"),
+        "file" => String::from("::file-selector-button"),
+        "placeholder" => String::from("::placeholder"),
+        // rtl	[dir=“rtl”] &
+        // ltr	[dir=“ltr”] &
+        _ => bail!("Unknown pseudo class: {}", name),
+    })
+}

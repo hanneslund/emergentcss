@@ -1,0 +1,29 @@
+{
+  "sections": [
+    {
+      "title": "Getting started",
+      "routes": [
+        { "title": "What is this?", "route": "" },
+        { "title": "Try it out", "route": "try" }
+      ]
+    },
+    {
+      "title": "Features",
+      "routes": [
+        { "title": "Variants", "route": "variants" },
+        { "title": "Arbitrary values", "route": "arbitrary" },
+        { "title": "Groups", "route": "groups" },
+        { "title": "Nesting", "route": "nesting" }
+      ]
+    },
+    {
+      "title": "Utils",
+      "routes": [
+        { "title": "Spacing", "route": "spacing" },
+        { "title": "Sizing", "route": "sizing" },
+        { "title": "Flexbox & Grid", "route": "flexandgrid" },
+        { "title": "Typography", "route": "typography" }
+      ]
+    }
+  ]
+}

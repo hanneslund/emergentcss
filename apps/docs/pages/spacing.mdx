@@ -1,0 +1,43 @@
+import ValuesTable, { spacing, percentage } from "../components/ValuesTable";
+
+# Spacing
+
+## Padding
+
+### All sides
+
+```
+p=4
+```
+
+### With side specified
+
+```
+p-{t|r|b|l|x|y}=value
+p-b=10
+```
+
+### Values
+
+<ValuesTable values={spacing("padding")} />
+
+## Margin
+
+### All sides
+
+```
+m=4
+```
+
+### With side specified
+
+```
+m-{t|r|b|l|x|y}=value
+m-t=10
+```
+
+### Values
+
+<ValuesTable
+  values={[{ name: "auto", value: "margin: auto;" }, ...spacing("margin")]}
+/>
