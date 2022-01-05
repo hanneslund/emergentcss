@@ -10,19 +10,17 @@
     {
       "title": "Features",
       "routes": [
-        { "title": "Variants", "route": "variants" },
         { "title": "Arbitrary values", "route": "arbitrary" },
         { "title": "Groups", "route": "groups" },
         { "title": "Nesting", "route": "nesting" }
       ]
     },
     {
-      "title": "Utils",
+      "title": "Reference",
       "routes": [
-        { "title": "Spacing", "route": "spacing" },
-        { "title": "Sizing", "route": "sizing" },
-        { "title": "Flexbox & Grid", "route": "flexandgrid" },
-        { "title": "Typography", "route": "typography" }
+        { "title": "Utils", "route": "utils" },
+        { "title": "Colors", "route": "colors" },
+        { "title": "Variants", "route": "variants" }
       ]
     }
   ]
