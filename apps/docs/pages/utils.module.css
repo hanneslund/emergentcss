@@ -1,3 +1,7 @@
 .accordion [data-state="open"] svg {
   transform: rotate(180deg);
 }
+
+.accordion > div:first-child button {
+  border: none;
+}
