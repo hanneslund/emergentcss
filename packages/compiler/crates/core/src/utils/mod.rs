@@ -272,6 +272,9 @@ pub fn get_util_css(property: &str, value: &Option<Value>) -> String {
 
 
         // Transitions & Animation
+        // tr-p=none
+        // tr-de
+        // tr-du
         ("transition-none", None) => String::from("transition-property:none;"),
         ("transition-all", None) => String::from("transition-property:all;transition-timing-function:cubic-bezier(0.4,0,0.2,1);transition-duration:150ms;"),
         ("transition", None) => String::from("transition-property:background-color,border-color,color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-timing-function:cubic-bezier(0.4,0,0.2,1);transition-duration:150ms;"),

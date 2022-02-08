@@ -1,0 +1,24 @@
+{
+  "name": "@emergentcss/webpack",
+  "version": "0.0.1",
+  "main": "dist",
+  "license": "MIT",
+  "scripts": {
+    "test:watch": "jest --watchAll",
+    "build": "swc src -d ."
+  },
+  "dependencies": {
+    "@emergentcss/compiler": "0.0.1"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.1.55",
+    "@swc/core": "^1.2.127",
+    "@swc/jest": "^0.2.15",
+    "@types/jest": "^27.4.0",
+    "@types/loader-utils": "^2.0.3",
+    "@types/node": "^17.0.8",
+    "jest": "^27.4.7",
+    "loader-utils": "^3.2.0",
+    "webpack": "^5.65.0"
+  }
+}

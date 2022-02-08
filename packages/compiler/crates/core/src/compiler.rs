@@ -22,4 +22,10 @@ impl Compiler {
     pub fn get_css(&mut self) -> String {
         self.css_writer.get_css()
     }
+
+    // pub fn get_flattened_utils(&self, code: &str) -> Vec<String> {
+    //     let tokens = lexer::get_tokens(code);
+    //     let ast = Parser::from(tokens).parse();
+    //     ast.flatten()
+    // }
 }
